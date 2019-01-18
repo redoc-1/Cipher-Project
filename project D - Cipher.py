@@ -4,8 +4,7 @@
 # In[18]:
 
 
-# hardcoding string and a list that is going to be used onward
-
+# hard coding a string and a list that are going to be used onwards
 array = "abcdefghijklmnopqrstuvwxyz"
 array_list = [
     'A', 'B', 'C', 'D', 'E', 'F',
@@ -15,11 +14,10 @@ array_list = [
     'Y', 'Z'
 ]
 
-# function for encrypting data and adding up letters to dictionary from an encrypted text
+# encode() is a function for data ecryption and adding up letters to dictionary
+# from an encrypted text
 
 # encryption part
-
-
 def encode():
 
     text = input("Please enter text you want to encrypt:\n ")
@@ -77,6 +75,8 @@ class User:
 
 owner = User("Viktoras", "Vovčenko")
 
+
+# executing the code
 print(" A PROJECT BY\n", owner.firstname, owner.surname, "\n\n")
 encode()
 decode()
