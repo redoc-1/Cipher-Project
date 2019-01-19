@@ -4,7 +4,6 @@
 # In[18]:
 
 
-# hard coding a string and a list that are going to be used onwards
 array = "abcdefghijklmnopqrstuvwxyz"
 array_list = [
     'A', 'B', 'C', 'D', 'E', 'F',
