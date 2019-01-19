@@ -1,5 +1,5 @@
+OVERVIEW
 The program is built with a goal to demonstrate the Ceaser Cipher encryption technic and an easy way of braking it by identifying the most popular letters within the encrypted text.
-
 
 It basically contains 3 main parts that include text encryption, decryption and a user class for highlighting a presenter's/project owner's name.
 
