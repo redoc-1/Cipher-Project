@@ -4,14 +4,10 @@
 # In[18]:
 
 
-array = "abcdefghijklmnopqrstuvwxyz"
-array_list = [
-    'A', 'B', 'C', 'D', 'E', 'F',
-    'G', 'H', 'I', 'J', 'K', 'L',
-    'M', 'N', 'O', 'P', 'Q', 'R',
-    'S', 'T', 'U', 'V', 'W', 'X',
-    'Y', 'Z'
-]
+# hard coding a string and a list that are going to be used onwards
+import string
+array = string.ascii_lowercase
+array_list = list(string.ascii_uppercase)
 
 # encode() is a function for data ecryption and adding up letters to dictionary
 # from an encrypted text
@@ -27,15 +23,13 @@ def encode():
         if c.isalpha():
             if c.islower():
                 encrypted += array[(array.index(c) + key) % 26]
-                #letters[c] = letters.get(c, 0) + 1
             elif c.isupper():
                 encrypted += array_list[(array_list.index(c) + key) % 26]
-                #letters[c] = letters.get(c, 0) + 1
         else:
             encrypted += c
 
 # letters' dictionary
-    letters = dict()
+    letters = {}
     encrypted_list = list(encrypted)
 
     for h in encrypted_list:
@@ -48,11 +42,11 @@ def encode():
 # function for decrypting data
 def decode():
 
-    _encrypted = input("Enter text you want to decrypt:\n ")
+    encrypted = input("Enter text you want to decrypt:\n ")
     decrypting = ""
     key = 4
 
-    for d in _encrypted:
+    for d in encrypted:
         if d.isalpha():
             if d.islower():
                 decrypting += array[(array.index(d) - key) % 26]
