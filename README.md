@@ -17,8 +17,9 @@ https://en.wikipedia.org/wiki/Letter_frequency
 In order to break a code take the most popular letter from the encrypted text and compare it to the most popular letter in English alphabet, a length of these letter' difference will most probably be a key to decryption.
 
 
-## SECOND AND THIRD PARTs
+## SECOND AND THIRD PARTS
 Pretty much self-explanatory. Decryption function does only decryption and the class method is being used for a demonstration of such functionality, though it does not affect the code anyhow and is optional.
+
 
 
 ### ADDITIONAL NOTE
