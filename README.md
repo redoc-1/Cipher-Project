@@ -1,4 +1,5 @@
 #OVERVIEW
+
 The program is built with a goal to demonstrate the Ceaser Cipher encryption technic and an easy way of braking it by identifying the most popular letters within the encrypted text.
 
 
@@ -6,6 +7,7 @@ It basically contains 3 main parts that include text encryption, decryption and 
 
 
 ##FIRST PART
+
 The first part of the program replaces letters of the text you want to encrypt by other letters by simply shifting them back or forth. So, for instance if the hard coded key is 2, the program will replace any alphabet letter of your message with the one that stands two symbols away from it on the alphabet, for instance the letter A would be replaced with C or letter K with letter M. 
 
 The first defined function does not only encrypts the data, but also counts the most popular symbols from the encrypted text. Knowing the most popular letters in English language makes it easy to guess a key in order to break a code. Information on the most popular letters may be found under the following URL:
